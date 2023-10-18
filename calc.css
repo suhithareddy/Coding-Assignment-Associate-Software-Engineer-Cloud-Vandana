@@ -1,0 +1,87 @@
+*{
+    background-image: url("calc\ img4.jpg");
+    background-size: cover;
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+    color: goldenrod;
+}
+
+body {
+    background-image: url("calc\ img4.jpg");
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+   
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    font-size: 30px;
+    border: 5px solid white;
+    font-weight: 50px;
+    color: #fff;
+}
+
+.button1 {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    background-color: cadetblue;
+    color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: blue;
+}
+.button2 {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    background-color: cadetblue;
+    color: aqua;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button2:hover {
+    background-color: blue;
+}
+.button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+    <script src="survey.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Customer Survey Form</div>
+        <form id="survey-form">
+            <div class="user_details">
+                <div class="input-box">
+                    <label for="FirstName">FirstName</label>
+                    <input type="text" required id="FirstName" placeholder="Enter FirstName" name="FirstName"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="LastName">LastName</label>
+                    <input type="text" required id="LastName" placeholder="Enter LastName" name="LastName"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="dob">Date of birth</label>
+                    <input type="date" required id="dob" name="dob"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="USA">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="France">France</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Japan">Japan</option>
+                    </select><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="profession">Profession</label>
+                    <input type="text" required id="profession" placeholder="Enter Professional details" name="profession"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="Email">Email</label>
+                    <input type="email" required id="Email" placeholder="Enter Email id" name="Email"><br>
+                </div>
+
+                <div class="input-box">
+                    <label for="mobile_number">Mobile Number</label>
+                    <input type="tel" required id="mobile_number" placeholder="Enter 10 digits mobile number" pattern="[0-9]{10}" name="mobile_number">
+                </div>
+            </div>
+            <div class="gender">Gender</div><br>
+            <div class="category1">
+                <input type="radio" required id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+            <div class="category2">
+                <input type="radio" required id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+            </div>
+            <div class="category3">
+                <input type="radio" required id="prefer_not_to_say" name="gender" value="Prefer not to say">
+                <label for="prefer_not_to_say">Prefer not to say</label><br>
+            </div>
+
+            <br>
+            <button type="button" onclick="validateForm()">Submit</button>
+            <button type="button">Reset</button>
+        </form>
+
+        <div id="popup" class="popup">
+            <h2>Survey - results</h2><br>
+            <p id="resultDisplay"></p><br><center>
+            <button onclick="closePopup()">close</button></center>
+           
+        </div>
+    </div>
+
+    
+</body>
+</html>
